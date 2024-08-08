@@ -13,6 +13,10 @@ def calculate():
     op1 = optionV.get()
     op2 = optionVSec.get()
 
+    if(op1 == op2):
+        configLabel('Please select different units.')
+        return
+
     if op1 == 'Celsius':
         if op2 == 'Fahrenheit':
             configLabel(f'{c.celsius_to_fahrenheit(x)}F°')
