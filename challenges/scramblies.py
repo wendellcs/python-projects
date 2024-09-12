@@ -10,6 +10,6 @@ def scramble(s1, s2):
         d2[key2] = value2
 
     for l in d2:
-        if not(l in d1 and d2[l] <= d1[l]):
+        if not(l in d1 or d2[l] <= d1[l]):
             return False
     return True
